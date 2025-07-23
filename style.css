@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    font-family: Arial;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(./image/foster-lake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+input {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+   
+
+}
+
+
+#btn {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 10px;
+}
+
+#weather {
+    margin-top: 20px;
+}
+
+#weather h1 , p {
+cursor: pointer;
+}
+
+.weathercard {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 280px;
+    width: 400px;
+    position: absolute;
+    padding: 50px 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: ui-sans-serif;
+}
