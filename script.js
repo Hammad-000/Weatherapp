@@ -7,7 +7,7 @@ async function showweather() {
   try {
     
     const locationRes = await fetch(
-      `https://dataservice.accuweather.com/locations/v1/cities/search?q=${searchcity}&apikey=${API_KEY}`
+      `http://dataservice.accuweather.com/locations/v1/cities/search?q=${searchcity}&apikey=${API_KEY}`
     );
     const locationData = await locationRes.json();
 
