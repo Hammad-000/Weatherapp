@@ -7,7 +7,7 @@ async function showweather() {
   try {
     
     const locationRes = await fetch(
-      `http://dataservice.accuweather.com/locations/v1/cities/search?q=${searchcity}&apikey=${API_KEY}`
+      `https://dataservice.accuweather.com/locations/v1/cities/search?q=${searchcity}&apikey=${API_KEY}`
     );
     const locationData = await locationRes.json();
 
@@ -22,7 +22,7 @@ async function showweather() {
 
   
     const weatherRes = await fetch(
-      `http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${API_KEY}`
+      `https://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${API_KEY}`
     );
     const weatherData = await weatherRes.json();
     const current = weatherData[0];
@@ -37,17 +37,6 @@ async function showweather() {
     weatherupdate.innerHTML = `<p>Error: ${error.message}</p>`;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
